@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="style.css">
-    {% if page.nav %}
-      {% include {{ page.nav }} %}
-    {% endif %}
+    {% capture active_page %} 
+      {{ page.title }}
+    {% endcapture %}
+    {% include header.html active=active_page %}
   </head>
   <body>
       {{ content }}

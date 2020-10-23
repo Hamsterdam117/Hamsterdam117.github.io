@@ -1,0 +1,23 @@
+<ul>
+	{% if include.active == "Home" %}
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+  		<li><a href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+	{% elsif include.active == "News" %}
+		<li><a href="#home">Home</a></li>
+		<li><a class="active" href="#news">News</a></li>
+  		<li><a href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+	{% elsif include.active == "Contact" %}
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+  		<li><a class="active" href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+	{% elsif include.active == "About" %}
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+  		<li><a href="#contact">Contact</a></li>
+  		<li><a class="active" href="#about">About</a></li>
+	{% endif %}
+</ul>
