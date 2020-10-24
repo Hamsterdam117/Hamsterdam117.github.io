@@ -64,6 +64,13 @@ function mouseOff(src) {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
+
+  	var path = new URL(document.getElementById("nav-icon").src);
+
+  	if (path.pathname == "/img/navbar-icon/icon-cross-white.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
+	}
+
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {

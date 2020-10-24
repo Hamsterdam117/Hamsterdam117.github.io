@@ -2,7 +2,7 @@ To make changes:
 
 In the command line: 
 
-- jekyll build / bundler exec jekyll build
+- jekyll build / bundler exec jekyll build (jekyll serve to host local server)
 - git add --all
 - git commit
 - git push
