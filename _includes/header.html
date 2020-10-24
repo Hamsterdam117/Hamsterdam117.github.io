@@ -1,23 +1,77 @@
-<ul>
+<div class="navbar">
 	{% if include.active == "Home" %}
-		<li><a class="active" href="#home">Home</a></li>
-		<li><a href="#news">News</a></li>
-  		<li><a href="#contact">Contact</a></li>
-  		<li><a href="#about">About</a></li>
-	{% elsif include.active == "News" %}
-		<li><a href="#home">Home</a></li>
-		<li><a class="active" href="#news">News</a></li>
-  		<li><a href="#contact">Contact</a></li>
-  		<li><a href="#about">About</a></li>
-	{% elsif include.active == "Contact" %}
-		<li><a class="active" href="#home">Home</a></li>
-		<li><a href="#news">News</a></li>
-  		<li><a class="active" href="#contact">Contact</a></li>
-  		<li><a href="#about">About</a></li>
+		<a class="active" href="">Home</a>
+		
+		<div style="float:right" class="dropdown">
+			<img src="/img/navbar-icon/icon-white.png" onclick="onClick(this.src)" onmouseover="mouseOn(this.src)" onmouseout="mouseOff(this.src)" class="icon dropbtn" id="nav-icon" />
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#">Contact Me1</a>
+			    <a href="#">Link 2</a>
+			    <a href="#">Link 3</a>
+			</div>
+		</div>
+
+  		<a style="float:right" href="#about">About Me</a>
+
 	{% elsif include.active == "About" %}
-		<li><a class="active" href="#home">Home</a></li>
-		<li><a href="#news">News</a></li>
-  		<li><a href="#contact">Contact</a></li>
-  		<li><a class="active" href="#about">About</a></li>
+		<a href="">Home</a></li>
+  		<a style="float:right" class="active" href="#about">About Me</a>
+
+  	{% elsif include.active == "Contact" %}
+  		<a href="">Home</a>
+  		<a style="float:right" href="#about">About Me</a>
 	{% endif %}
-</ul>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function onClick(src) {
+	document.getElementById("myDropdown").classList.toggle("show");
+
+  	var path = new URL(src);
+
+	if (path.pathname == "/img/navbar-icon/icon-blue.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-blue.png";
+
+	} else if (path.pathname == "/img/navbar-icon/icon-cross-blue.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-blue.png";
+	}
+}
+
+function mouseOn(src) {
+	var path = new URL(src);
+
+	if (path.pathname == "/img/navbar-icon/icon-white.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-blue.png";
+
+	} else if (path.pathname == "/img/navbar-icon/icon-cross-white.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-blue.png";
+	}
+}
+
+function mouseOff(src) {
+	var path = new URL(src);
+
+	if (path.pathname == "/img/navbar-icon/icon-blue.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
+
+	} else if (path.pathname == "/img/navbar-icon/icon-cross-blue.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-white.png";
+	}
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

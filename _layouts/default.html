@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="style.css">
-    {% capture active_page %} 
-      {{ page.title }}
-    {% endcapture %}
+    {% assign active active_page = page.title %}
     {% include header.html active=active_page %}
   </head>
+
   <body>
+    <div class="main">
       {{ content }}
+    </div>
   </body>
 </html>
