@@ -1,10 +1,10 @@
 <div class="navbar">
-	<a id="nav-home" class="" href="/index.html">Home</a>
+	<a id="nav-home" href="/index.html">Home</a>
 	
 	<div style="float:right" class="dropdown">
 		<img src="/img/navbar-icon/icon-white.png" onclick="onClick(this.src)" onmouseover="mouseOn(this.src)" onmouseout="mouseOff(this.src)" class="icon dropbtn" id="nav-icon" />
 		<div id="myDropdown" class="dropdown-content">
-			<a id="nav-contact" style="" href="/contact.html">Contact Me</a>
+			<a id="nav-contact" href="/contact.html">Contact Me</a>
 		    <a href="https://www.linkedin.com/in/jon-allen-b071ba195">LinkedIn</a>
 		</div>
 	</div>
@@ -24,7 +24,7 @@ function activePage() {
 		document.getElementById("nav-home").classList.add("active");
 	} else if (title == "About") {
 		document.getElementById("nav-about").classList.add("active");
-	} else if (title == "contact") {
+	} else if (title == "Contact") {
 		document.getElementById("nav-contact").style.color = "#66a3ff";
 	}
 }
