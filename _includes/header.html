@@ -1,29 +1,35 @@
 <div class="navbar">
-	{% if include.active == "Home" %}
-		<a class="active" href="">Home</a>
-		
-		<div style="float:right" class="dropdown">
-			<img src="/img/navbar-icon/icon-white.png" onclick="onClick(this.src)" onmouseover="mouseOn(this.src)" onmouseout="mouseOff(this.src)" class="icon dropbtn" id="nav-icon" />
-			<div id="myDropdown" class="dropdown-content">
-				<a href="#">Contact Me</a>
-			    <a href="#">Link 2</a>
-			    <a href="#">Link 3</a>
-			</div>
+	<a id="nav-home" class="" href="/index.html">Home</a>
+	
+	<div style="float:right" class="dropdown">
+		<img src="/img/navbar-icon/icon-white.png" onclick="onClick(this.src)" onmouseover="mouseOn(this.src)" onmouseout="mouseOff(this.src)" class="icon dropbtn" id="nav-icon" />
+		<div id="myDropdown" class="dropdown-content">
+			<a id="nav-contact" style="" href="/contact.html">Contact Me</a>
+		    <a href="https://www.linkedin.com/in/jon-allen-b071ba195">LinkedIn</a>
 		</div>
+	</div>
 
-  		<a style="float:right" href="#about">About Me</a>
-
-	{% elsif include.active == "About" %}
-		<a href="">Home</a></li>
-  		<a style="float:right" class="active" href="#about">About Me</a>
-
-  	{% elsif include.active == "Contact" %}
-  		<a href="">Home</a>
-  		<a style="float:right" href="#about">About Me</a>
-	{% endif %}
+	<a id="nav-about" style="float:right" href="/about.html">About Me</a>
 </div>
 
 <script>
+/* when page loads update active page in the navbar */
+window.onload = activePage;
+
+function activePage() {
+	var title = document.getElementsByTagName("title")[0];
+	title = title.innerHTML;
+
+	if (title == "Home") {
+		document.getElementById("nav-home").classList.add("active");
+	} else if (title == "About") {
+		document.getElementById("nav-about").classList.add("active");
+	} else if (title == "contact") {
+		document.getElementById("nav-contact").style.color = "#66a3ff";
+	}
+}
+
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function onClick(src) {
@@ -36,6 +42,12 @@ function onClick(src) {
 
 	} else if (path.pathname == "/img/navbar-icon/icon-cross-blue.png") {
 		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-blue.png";
+
+	} else if (path.pathname == "/img/navbar-icon/icon-white.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-white.png";
+
+	} else if (path.pathname == "/img/navbar-icon/icon-cross-white.png") {
+		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
 	}
 }
 

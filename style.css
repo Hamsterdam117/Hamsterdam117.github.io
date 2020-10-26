@@ -17,17 +17,12 @@ html {
   color: #ffffff;
 }
 
-.main {
-  padding-left: 4em;
-  padding-top: 4em;
-}
-
 .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0em 1em;
   overflow: hidden;
-  font-size: 1.3em;
+  font-size: 2em;
 }
 
 .navbar a, .dropdown {
@@ -44,7 +39,6 @@ html {
   color: #66a3ff;
   outline: none;
 }
-
 .active {
   border-bottom: solid;
   border-bottom-color: #66a3ff;
@@ -76,6 +70,7 @@ html {
   min-width: 5em;
   max-width: 6em;
   border-radius: 1em;
+  /*background-color: #0a2557;*/
   box-shadow: 1em 1em 0.8em 1em rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -87,6 +82,7 @@ html {
   text-decoration: none;
   font-size: 0.8em;
   display: block;
+  margin: 0;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -94,7 +90,51 @@ html {
 
 /* STYLING FOR HOME PAGE */
 
-.home-h1 {
+
+h1 {
   text-align: center;
-  font-size: 4em;
+  font-size: 6em;
+  margin-bottom: 0.5em !important;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 1.5em;
+  /*border: 2px solid green;*/
+}
+
+.title-underline {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0.3em;
+  background: linear-gradient(to right, rgba(102, 163, 255,0) 0%, rgba(102, 163, 255,1) 5%, rgba(102, 163, 255,1) 48%, rgba(102, 163, 255,0) 48%, rgba(102, 163, 255,0) 52%, rgba(102, 163, 255,1) 52%, rgba(102, 163, 255,1) 95%, rgba(102, 163, 255,0) 100%);
+}
+
+.circle {
+  position: relative;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: calc(50% - 0.75em);
+  height: 1.1em;
+  width: 1.1em;
+  border: 0.2em solid #66a3ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.intro {
+  font-size: 1.4em;
+  padding-top: 2em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

@@ -9,8 +9,16 @@
   </head>
 
   <body>
-    <div class="main">
+      {% if page.title == 'Home' %}
+        <h1 style="padding-top: 1.5em;">{{ page.header }}</h1>
+      {% else %}
+        <h1>{{ page.header }}</h1>
+      {% endif %}
+
+      <div class ="container">
+        <div class="title-underline"></div>
+        <div class="circle"></div>
+      </div>
       {{ content }}
-    </div>
   </body>
 </html>
