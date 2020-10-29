@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="style.css">
-    {% assign active active_page = page.title %}
+    {% assign active_page = page.title %}
     {% include header.html active=active_page %}
   </head>
 
   <body>
       {% if page.title == 'Home' %}
-        <h1 style="padding-top: 1.5em;">{{ page.header }}</h1>
+        <h1 style="font-size: 8vw;">{{ page.header }}</h1>
       {% else %}
         <h1>{{ page.header }}</h1>
       {% endif %}
 
-      <div class ="container">
-        <div class="title-underline"></div>
-        <div class="circle"></div>
+      <div class ="h1-underline-container">
+        <div class="h1-underline"></div>
+        <div class="h1-circle"></div>
       </div>
       {{ content }}
   </body>
-  <footer>{% include footer.html %}</footer>
+  <!--<footer>{% include footer.html %}</footer>-->
 </html>

@@ -4,4 +4,14 @@ title: Home
 header: Jon Allen
 ---
 
-<p class="content">This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about.</p>
+<p class="intro" style="margin-bottom: 10em;">This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about.</p>
+
+{% assign post-text = "During College, I coded and helped build a self navigating robot for the Engineering Education Scheme (EES), using an Arduino for the processing unit and a ultrasound censor for collision detection" %}
+{% assign post-src = "img/home-images/EES-Robot.JPG" %}
+{% assign post-link = "" %}
+{% include /home-post.html text=post-text src=post-src link=post-link %}
+
+{% assign post-text = "For my A level Computer Science coursework, I made a racing game in Unity on my Windows-bootcamped MacBook. The game is called &quot;Turbo Racing&quot; because i had no idea what else to call it." %}
+{% assign post-src = "img/home-images/Turbo-Racing.PNG" %}
+{% assign post-link = "" %}
+{% include /home-post.html text=post-text src=post-src link=post-link %}
