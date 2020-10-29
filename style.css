@@ -17,6 +17,10 @@ html {
   color: #ffffff;
 }
 
+body {
+  padding-bottom: 3em;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -162,4 +166,15 @@ h1 {
 .link:hover {
   color: #66a3ff;
   
+}
+
+.footer {
+  border-top: 3px solid #66a3ff;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 3em;
+  background-image: url("/img/background-footer.jpg");
+  background-size: 100% 100%; 
 }
