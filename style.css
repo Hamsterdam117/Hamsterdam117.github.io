@@ -1,4 +1,6 @@
-/* GENERAL STYLE FOR LAYOUT AND NAVBAR */
+/*********************/
+/* LAYOUT AND NAVBAR */
+/*********************/
 
 @font-face {
   font-family: "Roboto Slab";
@@ -43,6 +45,7 @@ body {
   color: #66a3ff;
   outline: none;
 }
+
 .active {
   border-bottom: solid;
   border-bottom-color: #66a3ff;
@@ -92,9 +95,6 @@ body {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display: block;}
 
-/* STYLING FOR HOME PAGE */
-
-
 h1 {
   text-align: center;
   font-size: 6vw;
@@ -103,6 +103,7 @@ h1 {
 
 h2 {
   font-size: 2.2em !important;
+  text-align: center;
 }
 
 .h1-underline-container {
@@ -137,6 +138,34 @@ h2 {
   display: inline-block;
 }
 
+table
+{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-text {
+  padding: auto;
+}
+
+.link {
+  color: white;
+  text-decoration-color: #66a3ff;
+}
+
+.link:hover {
+  color: #66a3ff;
+}
+
+
+
+
+
+
+/***********************/
+/* HOME PAGE AND POSTS */
+/***********************/
+
 .intro {
   font-size: 2vw;
   padding-top: 2em;
@@ -152,7 +181,6 @@ h2 {
   margin-right: auto;
   width: 75%;
   height: 1em;
-  /*border: 2px solid green;*/
 }
 
 .post-underline {
@@ -181,52 +209,13 @@ h2 {
 .content {
   font-size: 1vw;
   padding-top: 2em;
-  width: 75%;
-  
-}
-
-table
-{
-    table-layout: fixed;
-    width: 100%;
+  width: 75%; 
 }
 
 .content-table td {
   margin-left: none;
   margin-right: none;
   text-align: center;
-}
-
-.about-table {
-  font-size: 1vw;
-  padding-top: 2em;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.table-text {
-  padding: auto;
-}
-
-.content-image {
-  max-width: 50%;
-  height: auto;
-  border-radius: 5em;
-  border: 0.15em solid #66a3ff;
-
-}
-
-.link {
-  color: white;
-  text-decoration-color: #66a3ff;
-
-}
-
-.link:hover {
-  color: #66a3ff;
-  
 }
 
 .footer {
@@ -280,7 +269,38 @@ table
   padding: auto;
 }
 
-.links-icons {
+
+
+
+
+
+
+
+
+
+
+
+/**************/
+/* ABOUT PAGE */
+/**************/
+
+.about-table {
+  font-size: 1vw;
+  padding-top: 2em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5em;
+  border: 0.15em solid #66a3ff;
+}
+
+.about-links-icons {
   width: 6vw;
   height: auto;
 }
