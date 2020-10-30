@@ -4,14 +4,24 @@ title: Home
 header: Jon Allen
 ---
 
-<p class="intro" style="margin-bottom: 10em;">This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about.</p>
+<p class="intro" style="margin-bottom: 10em;">This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about. This website was made using the Jekyll framework and I could write an article on it here, but you are already looking at what I did for it, so there isn't really much point.</p>
 
-{% assign post-text = "During College, I coded and helped build a self navigating robot for the Engineering Education Scheme (EES), using an Arduino for the processing unit and a ultrasound censor for collision detection" %}
+{% assign post-title = "EES Robot" %}
+{% assign post-text = "During College, I coded and helped build a self navigating robot for the Engineering Education Scheme (EES), using an Arduino for the processing unit and a ultrasound censor for collision detection. The body was made using two sheets of acrylic and a Lego frame to support the motors and track frames." %}
 {% assign post-src = "img/home-images/EES-Robot.JPG" %}
-{% assign post-link = "" %}
-{% include /home-post.html text=post-text src=post-src link=post-link %}
+{% assign post-link = "/coming-soon.html" %}
+{% include /home-post.html heading=post-title text=post-text src=post-src link=post-link %}
 
+
+{% assign post-title = "Turbo Racing" %}
 {% assign post-text = "For my A level Computer Science coursework, I made a racing game in Unity on my Windows-bootcamped MacBook. It had multiple vehicles to select and a rally mode. At some point I want to remake this game now I have more computing power than a Macbook but I want to make all of my own assets, I might wait until after university but I'm not sure yet." %}
 {% assign post-src = "img/home-images/Turbo-Racing.PNG" %}
-{% assign post-link = "" %}
-{% include /home-post.html text=post-text src=post-src link=post-link %}
+{% assign post-link = "/coming-soon.html" %}
+{% include /home-post.html heading=post-title text=post-text src=post-src link=post-link %}
+
+
+{% assign post-title = "Modding Mario Kart Wii" %}
+{% assign post-text = "Little unusual, I know but I've had a lot of fun messing around with the Wii filesystem and modding the first game I became good at, and is still a really good game today despite the dated graphics, but thats nothing a pc emulator can't fix, which I also set up." %}
+{% assign post-src = "img/home-images/Modded-MKWii.png" %}
+{% assign post-link = "/coming-soon.html" %}
+{% include /home-post.html heading=post-title text=post-text src=post-src link=post-link %}

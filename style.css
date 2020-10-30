@@ -162,6 +162,9 @@ table
 
 
 
+
+
+
 /***********************/
 /* HOME PAGE AND POSTS */
 /***********************/
@@ -233,24 +236,28 @@ table
   margin-top: 4em;
 }
 
+.post-title {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
 .post-link {
   text-align: right;
   margin-top: 4.5em;
-  color: white;
 }
 
 .post-link a {
-  color: white;
+  color: #66a3ff;
   padding: 0.5em;
   text-decoration: none;
-  background-color: #66a3ff;
+  background-color: transparent;
   border-radius: 5em;
   border: 0.15em solid #66a3ff;
 }
 
 .post-link a:hover {
-  color: #66a3ff;
-  background-color: transparent;
+  color: white;
+  background-color: #66a3ff;
 }
 
 .post-image {
