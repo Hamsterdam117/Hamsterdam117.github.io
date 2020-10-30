@@ -1,9 +1,12 @@
-<div class="navbar">
+<div id="navbar">
 	<a id="nav-home" href="/index.html">Home</a>
+	<a id="nav-ees-robot" href="/EES-robot.html">EES Robot</a>
+	<a id="nav-turbo-racing" href="/turbo-racing.html">Turbo Racing</a>
+	<a id="nav-modding-mkw" href="/modding-mkw.html">Modding MKW</a>
 	
-	<div style="float:right" class="dropdown">
-		<img src="/img/navbar-icon/icon-white.png" onclick="onClick(this.src)" onmouseover="mouseOn(this.src)" onmouseout="mouseOff(this.src)" class="icon dropbtn" id="nav-icon" />
-		<div id="myDropdown" class="dropdown-content">
+	<div style="float:right" id="dropdown">
+		<img src="/img/navbar-icon/icon-white.png" onclick="onClick(this.src)" onmouseover="mouseOn(this.src)" onmouseout="mouseOff(this.src)" id="nav-icon" />
+		<div id="dropdownContent" class="dropdown-content">
 			<a id="nav-contact" href="mailto:jon@the-allens.net">Email</a>
 		    <a href="https://www.linkedin.com/in/jon-allen-b071ba195">LinkedIn</a>
 		    <a href="https://github.com/Hamsterdam117">GitHub</a>
@@ -27,6 +30,12 @@ function activePage() {
 		document.getElementById("nav-about").classList.add("active");
 	} else if (title == "Contact") {
 		document.getElementById("nav-contact").style.color = "#66a3ff";
+	} else if (title == "EES-Robot") {
+		document.getElementById("nav-ees-robot").classList.add("active");
+	} else if (title == "Turbo Racing") {
+		document.getElementById("nav-turbo-racing").classList.add("active");
+	} else if (title == "Modding MKW") {
+		document.getElementById("nav-modding-mkw").classList.add("active");
 	}
 }
 
@@ -34,7 +43,7 @@ function activePage() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function onClick(src) {
-	document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("dropdownContent").classList.toggle("show");
 
   	var path = new URL(src);
 
@@ -76,7 +85,7 @@ function mouseOff(src) {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('#nav-icon')) {
 
   	var path = new URL(document.getElementById("nav-icon").src);
 
