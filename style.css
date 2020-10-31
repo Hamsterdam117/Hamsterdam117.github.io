@@ -37,14 +37,7 @@ h2 {
 table
 {
     table-layout: fixed;
-}
-
-#centered-table {
-  padding-top: 2em;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+    margin-bottom: 3em;
 }
 
 #footer {
@@ -56,6 +49,26 @@ table
   height: 3em;
   background-image: url("/img/background-footer.jpg");
   background-size: 100% 100%; 
+}
+
+#centered-table {
+  table-layout: fixed;
+  padding-top: 2em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#centered-table p {
+  font-size: 1.6vw;
+}
+
+#centered-table img:not(.about-links-icons), #post-table img {
+  max-width: 65%;
+  height: auto;
+  border-radius: 5em;
+  border: 0.15em solid #66a3ff;
 }
 
 #h1-underline {
@@ -228,7 +241,8 @@ table
 }
 
 #post-table {
-  font-size: 1vw;
+  table-layout: fixed;
+  font-size: 1.4vw;
   padding-top: 2em;
   width: 75%; 
 }
@@ -247,7 +261,7 @@ table
 
 #post-table h3 {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 #post-table .link {
@@ -294,13 +308,6 @@ table
 
 .about-text {
   font-size: 1.75vw;
-}
-
-.about-image {
-  max-width: 65%;
-  height: auto;
-  border-radius: 5em;
-  border: 0.15em solid #66a3ff;
 }
 
 .about-links-icons {
