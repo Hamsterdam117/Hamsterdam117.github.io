@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
+  src: url("https://Hamsterdam117.github.io/fonts/RobotoSlab-VariableFont_wght.ttf");
 }
 
 html {
@@ -25,7 +25,7 @@ body {
 }
 
 .background {
-  background-image: url("/img/background.jpg");
+  background-image: url("https://Hamsterdam117.github.io/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -70,7 +70,7 @@ table
   position: fixed;
   bottom: 0;
   height: 3em;
-  background-image: url("/img/background-footer.jpg");
+  background-image: url("https://Hamsterdam117.github.io/img/background-footer.jpg");
   background-size: 100% 100%; 
 }
 
@@ -145,7 +145,7 @@ table
 }
 
 .navbar-container {
-  background-image: url("/img/background.jpg");
+  background-image: url("https://Hamsterdam117.github.io/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -215,7 +215,7 @@ table
   max-width: 15vw;
   border-radius: 1em;
   box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.2);
-  background-image: url("/img/background.jpg");
+  background-image: url("https://Hamsterdam117.github.io/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
