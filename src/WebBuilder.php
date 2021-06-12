@@ -79,8 +79,8 @@
 		echo "Copying Required Files...\n";
 		recurseCopy("./css/", "{$pathToBuild}/css/");
 		recurseCopy("./script/", "{$pathToBuild}/script/");
-		recurseCopy("../img/", "{$pathToBuild}/img");
-		recurseCopy("../fonts/", "{$pathToBuild}/fonts");
+		recurseCopy("./img/", "{$pathToBuild}/img");
+		recurseCopy("./fonts/", "{$pathToBuild}/fonts");
 		copy("./index.html", "{$pathToBuild}/index.html");
 		return true;
 	}
