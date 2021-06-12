@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Home</title>
+		<link rel='stylesheet' href='css/style.css'>
+		<div class='navbar-container'>
+			<div id='navbar'>
+				<a id='nav-home' href='./home.html'>Home</a>
+				<div style='float:left' id='dropdowneducation-projects' class='dropdown-position'>
+					<p id='nav-education-projects' onclick='onClickType(this.src, "education-projects")'>Education Projects</p>
+					<div id='dropdownContenteducation-projects' class='dropdown-content dropdown-content-type'>
+						<a id='nav-page' href='./turbo-racing.html'>Turbo Racing</a>
+					</div>
+				</div>
+				<div style='float:left' id='dropdownpersonal-projects' class='dropdown-position'>
+					<p id='nav-personal-projects' onclick='onClickType(this.src, "personal-projects")'>Personal Projects</p>
+					<div id='dropdownContentpersonal-projects' class='dropdown-content dropdown-content-type'>
+						<a id='nav-page' href='./ees-robot.html'>EES Robot</a>
+						<a id='nav-page' href='./modding-mkwii.html'>Modding MKWii</a>
+					</div>
+				</div>
+				<div style='float:right' id='dropdown' class='dropdown-position'>
+					<img src='./img/navbar-icon/icon-white.png' onclick='onClickMenu(this.src)' onmouseover='mouseOnMenu(this.src)' onmouseout='mouseOffMenu(this.src)' id='nav-icon' />
+					<div id='menuDropdownContent' class='dropdown-content'>
+						<a id='nav-contact' href='mailto:jon@the-allens.net'>Email</a>
+						<a href='https://www.linkedin.com/in/jon-allen-b071ba195'>LinkedIn</a>
+						<a href='https://github.com/Hamsterdam117'>GitHub</a>
+					</div>
+				</div>
+				<a id='nav-about' style='float:right' href='./about-me.html'>About Me</a>
+			</div>
+		</div>
+		<script src='./script/navbar.js'></script>
+	</head>
+	<body>
+		<div class='background'></div>
+		<div class='body-content'>
+			<h1>Jon Allen</h1>
+			<div id='h1-underline'><div class='line'></div><div class='circle'></div></div>
+			<p class='intro'>This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about. This website was originally made using the Jekyll framework and then rewritten using a custom PHP website builder that I wrote. I could probably write an article on it here, but you're already looking at the result, so there isn't much point.</p>
+			<div class='new-post'>
+				<div id='post-underline'><div class='line'></div><div class='circle'></div></div>
+				<table id='post-table'>
+					<tr>
+						<td class='image-container'><img src='./img/home-images/EES-Robot.JPG' alt='EES Robot' /></td>
+						<td>
+							<h3>EES Robot</h3>
+							<p>During College, I coded and helped build a self navigating robot for the Engineering Education Scheme (EES), using an Arduino for the processing unit and a ultrasound censor for collision detection. The body was made using two sheets of acrylic and a Lego frame to support the motors and track frames.</p>
+							<p class='link'><a href='./ees-robot.html'>Read More</a></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class='new-post'>
+				<div id='post-underline'><div class='line'></div><div class='circle'></div></div>
+				<table id='post-table'>
+					<tr>
+						<td class='image-container'><img src='./img/home-images/Turbo-Racing.PNG' alt='Turbo Racing' /></td>
+						<td>
+							<h3>Turbo Racing</h3>
+							<p>For my A level Computer Science coursework, I made a racing game in Unity on my Windows-bootcamped MacBook. It had multiple vehicles to select and a rally mode. At some point I want to remake this game now I have more computing power than a Macbook but I want to make all of my own assets, I might wait until after university but I'm not sure yet.</p>
+							<p class='link'><a href='./turbo-racing.html'>Read More</a></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class='new-post'>
+				<div id='post-underline'><div class='line'></div><div class='circle'></div></div>
+				<table id='post-table'>
+					<tr>
+						<td class='image-container'><img src='./img/home-images/Modded-MKWii.png' alt='Modding MKWii' /></td>
+						<td>
+							<h3>Modding Mario Kart Wii</h3>
+							<p>Little unusual I know, but I've had a lot of fun messing around with the Wii filesystem and modding the first game I became good at, and is still a really good game today despite the dated graphics, but thats nothing a pc emulator can't fix, which I also set up.</p>
+							<p class='link'><a href='./modding-mkwii.html'>Read More</a></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

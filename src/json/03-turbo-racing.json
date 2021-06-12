@@ -1,0 +1,17 @@
+{
+	"pages":[
+		{
+			"title":"Turbo Racing",
+			"title_short":"Turbo Racing",
+			"type":"Education Projects",
+			"start_date":"Sep 2018",
+			"end_date":"Dec 2018",
+			"display_image":"Turbo-Racing.PNG",
+			"display_description":"For my A level Computer Science coursework, I made a racing game in Unity on my Windows-bootcamped MacBook. It had multiple vehicles to select and a rally mode. At some point I want to remake this game now I have more computing power than a Macbook but I want to make all of my own assets, I might wait until after university but I'm not sure yet.",
+			"content_html": [
+							"<p class='project-intro'>This was a racing game I made for one of my A level courseworks using the Unity game engine. As it was for coursework I'm not sure if I'm allowed to show code screenshots so I will just have to explain how things were programmed, but it was a lot UI based as well so shouldn't be too hard to follow.</p>",
+							"<p class='project-intro'>Currently all the screenshots I have from the game are really low-res as the game was made on my old MacBook, so I will write this page when I get Unity installed on my PC and can take some clearer and more specific screenshots.</p>"
+							]
+		}
+	]
+}

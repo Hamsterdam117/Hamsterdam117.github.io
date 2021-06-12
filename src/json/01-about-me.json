@@ -1,0 +1,29 @@
+{
+	"pages":[
+		{
+			"title":"About Me",
+			"title_short":"About Me",
+			"type":"none",
+			"content_html": [
+							"<table id='centered-table'>",
+							"\t<tr>",
+							"\t\t<td><img src='./img/jon-allen.jpg' alt='Jon Allen' /></td>",
+							"\t\t<td>",
+							"\t\t\t<div>",
+							"\t\t\t\t<p class='about-text'>I am Jon Allen, a second year Computer Science student at the University of Liverpool in the UK. I've been interested in computers and gaming for most of my life and this is shown through the various projects showcased on this website.</p>",
+							"\t\t\t\t<h2>Links</h2>",
+							"\t\t\t\t<table id='centered-table' style='padding: 0em; width:100%;'>",
+							"\t\t\t\t\t<tr>",
+							"\t\t\t\t\t<td><a href='mailto:jon@the-allens.net'><img class='about-links-icons' border='0' alt='Mail' src='./img/contact-icons/mail-white.png' width='100' height='100' onmouseover=\"this.src='./img/contact-icons/mail-blue.png'\" onmouseout=\"this.src='./img/contact-icons/mail-white.png'\"></a></td>",
+							"\t\t\t\t\t<td><a href='https://www.linkedin.com/in/jon-allen-b071ba195'><img class='about-links-icons' border='0' alt='LinkedIn' src='./img/contact-icons/linkedin-white.png' width='100' height='100' onmouseover=\"this.src='./img/contact-icons/linkedin-blue.png'\" onmouseout=\"this.src='./img/contact-icons/linkedin-white.png'\"></a></td>",
+							"\t\t\t\t\t<td><a href='https://github.com/Hamsterdam117'><img class='about-links-icons' border='0' alt='GitHub' src='./img/contact-icons/github-white.png' width='100' height='100' onmouseover=\"this.src='./img/contact-icons/github-blue.png'\" onmouseout=\"this.src='./img/contact-icons/github-white.png'\"></a></td>",
+							"\t\t\t\t\t</tr>",
+							"\t\t\t\t</table>",
+							"\t\t\t</div>",
+							"\t\t</td>",
+							"\t</tr>",
+							"</table>"
+							]
+		}
+	]
+}

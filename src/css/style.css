@@ -1,0 +1,399 @@
+/********************/
+/* UNIVERSAL STYLES */
+/********************/
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
+}
+
+html {
+  font-family: "Roboto Slab", sans-serif;
+  height: 100%;
+  height: 100%;
+  /*background: linear-gradient(to bottom, #000099 0%, #0099ff 100%);*/
+  color: #ffffff;
+}
+
+head {
+  position: fixed;
+  background: transparent;
+}
+
+body {
+  padding-bottom: 3em;
+}
+
+.background {
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: fixed;
+  z-index: -1;
+  position: fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+}
+
+.body-content {
+  margin-top: 6em;
+  max-width: 80%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8vw;
+  padding-top: 0.8em;
+  margin-bottom: 0.5em !important;
+}
+
+h2 {
+  font-size: 3.2vw !important;
+  text-align: center;
+}
+
+table
+{
+    table-layout: fixed;
+    margin-bottom: 3em;
+}
+
+#footer {
+  border-top: 3px solid #66a3ff;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 3em;
+  background-image: url("/img/background-footer.jpg");
+  background-size: 100% 100%; 
+}
+
+#centered-table {
+  table-layout: fixed;
+  padding-top: 2em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#centered-table p {
+  font-size: 1.6vw;
+}
+
+#centered-table img:not(.about-links-icons), #post-table img {
+  max-width: 65%;
+  height: auto;
+  border-radius: 5em;
+  border: 0.15em solid #66a3ff;
+}
+
+#h1-underline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 1.5em;
+  /*border: 2px solid green;*/
+}
+
+#h1-underline .line {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0.3em;
+  background: linear-gradient(to right, rgba(102, 163, 255,0) 0%, rgba(102, 163, 255,1) 5%, rgba(102, 163, 255,1) 48%, rgba(102, 163, 255,0) 48%, rgba(102, 163, 255,0) 52%, rgba(102, 163, 255,1) 52%, rgba(102, 163, 255,1) 95%, rgba(102, 163, 255,0) 100%);
+}
+
+#h1-underline .circle {
+  position: relative;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: calc(50% - 0.75em);
+  height: 1.1em;
+  width: 1.1em;
+  border: 0.2em solid #66a3ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/**********/
+/* NAVBAR */
+/**********/
+
+.active {
+  border-bottom: solid;
+  border-bottom-color: #66a3ff;
+  color: #66a3ff;
+}
+
+.navbar-container {
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: fixed;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 5.5vw;
+  align-content: center;
+}
+
+#navbar {
+  list-style-type: none;
+  position: fixed;
+  left: 10%;
+  top: 0;
+  margin: 0 auto;
+  padding: 0em 1em;
+  padding-bottom: 1em;
+  height: 2em;
+  width: 80%;  
+  overflow: visible;
+  font-size: 2vw;
+}
+
+#navbar a, #dropdown, #navbar p {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 1em 0.5em;
+  padding: 0em 0em 0.2em 0em;
+  text-decoration: none;
+}
+
+#navbar a:hover:not(.active), #dropdown img:hover, #dropdown img, #navbar p:hover:not(.active)  {
+  color: #66a3ff;
+  outline: none;
+}
+
+/* Dropdown Button */
+#dropdown img {
+  height: 1.2em; 
+  width: 1.2em;
+  z-index: auto;
+  background-color: inherit;
+  color: inherit;
+  padding: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Dropdown positioning */
+.dropdown-position {
+  position: relative;
+  z-index: 5;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 10vw;
+  max-width: 15vw;
+  border-radius: 1em;
+  box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.2);
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: fixed;
+  z-index: 10;
+}
+
+/* Dropdown Content for projects (Hidden by Default) */
+.dropdown-content-type {
+  top: 5vw;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: inherit;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size: 1.5vw;
+  display: block;
+  margin: 0;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/***********************/
+/* HOME PAGE AND POSTS */
+/***********************/
+
+.intro {
+  font-size: 2vw;
+  padding-top: 2em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.new-post {
+  margin-top: 4em;
+}
+
+#post-underline {
+  display: block;
+  margin-left: 2.5%;
+  margin-right: auto;
+  width: 75%;
+  height: 1em;
+}
+
+#post-underline .line {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0.3em;
+  background: linear-gradient(to right, rgba(102, 163, 255,0) 0%, rgba(102, 163, 255,1) 5%, rgba(102, 163, 255,1) 48%, rgba(102, 163, 255,0) 48%, rgba(102, 163, 255,0) 52%, rgba(102, 163, 255,1) 52%, rgba(102, 163, 255,1) 95%, rgba(102, 163, 255,0) 100%);
+}
+
+#post-underline .circle {
+  position: relative;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: calc(50% - 0.75em);
+  height: 1.1em;
+  width: 1.1em;
+  border: 0.2em solid #66a3ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#post-table {
+  table-layout: fixed;
+  font-size: 1.4vw;
+  padding-top: 2em;
+  width: 75%; 
+}
+
+#post-table .image-container {
+  text-align: center;
+  width: 50%;
+}
+
+#post-table img {
+  max-width: 75%;
+  height: auto;
+  border-radius: 5em;
+  border: 0.15em solid #66a3ff;
+}
+
+#post-table h3 {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+#post-table .link {
+  text-align: right;
+  margin-top: 4.5em;
+}
+
+#post-table .link a {
+  color: #66a3ff;
+  padding: 0.5em;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 5em;
+  border: 0.15em solid #66a3ff;
+}
+
+#post-table .link a:hover {
+  color: white;
+  background-color: #66a3ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************/
+/* ABOUT PAGE */
+/**************/
+
+.about-text {
+  font-size: 1.75vw;
+}
+
+.about-links-icons {
+  width: 6em;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************/
+/* PROJECT PAGES */
+/*****************/
+
+.project-intro {
+  font-size: 1.75vw;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 4em; 
+}
