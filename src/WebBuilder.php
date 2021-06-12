@@ -2,7 +2,7 @@
 	include "PageBuilder.php";
 
 	// Builds the website
-	function buildWebsite($pathToBuild='../') {
+	function buildWebsite($commitMessage, $pathToBuild='../') {
 		// Get directory ready for new build
 		if (!setupBuildDirectory($pathToBuild)) {
 			echo "FAILED: Missing CSS, JS, image, font, index.html file(s).";
@@ -27,7 +27,9 @@
 		foreach($pages as $page) {
 			buildPage($pathToBuild, $page, $pageTypesAndTitles);
 		}
-		echo "Completed Build.";
+		echo "Completed Build.\n";
+
+		uploadToGitHub($commitMessage, $pathToBuild);
 	}
 
 	// Merges all json files into one array and returns full page array
@@ -127,6 +129,19 @@
 	    closedir($dir); 
 	}
 
+	// Uploads everything to github
+	function uploadToGitHub($commitMessage, $pathToBuild) {
+		echo "Uploading to GitHub...";
+		chdir($pathToBuild);
+		exec("git pull");
+		exec("git add *");
+		exec("git commit -m \"{$commitMessage}\"");
+		exec("git push");
+		echo "Finished upload.";
+	}
+
 // Runs the code when php is called from the command line
-buildWebsite();
+$commitMessage = $argv[1];
+var_dump($argv);
+buildWebsite($commitMessage);
 ?>
