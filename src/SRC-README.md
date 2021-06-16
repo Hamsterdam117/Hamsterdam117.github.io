@@ -13,6 +13,7 @@ To add a new page:
 - go to src directory in command line
 -- cd "OneDrive\Documents\jonathanallen.uk website\Hamsterdam117.github.io\src"
 - php WebBuilder.php "commit message for github"
+- if there is no commit message for github, the website will not upload
 - changes may take a few minutes to appear on the site
 - Any changes to "style.css" will require a CTRL+F5 of the browser to see the changes
 

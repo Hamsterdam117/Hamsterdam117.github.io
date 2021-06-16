@@ -29,7 +29,11 @@
 		}
 		echo "Completed Build.\n";
 
-		uploadToGitHub($commitMessage, $pathToBuild);
+		if (($commitMessage != null) || ($commitMessage != "")) {
+			uploadToGitHub($commitMessage, $pathToBuild);
+		} else {
+			echo "No commit message provided: will not upload to GitHub.\n";
+		}
 	}
 
 	// Merges all json files into one array and returns full page array

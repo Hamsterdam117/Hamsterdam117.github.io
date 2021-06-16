@@ -43,7 +43,7 @@
 				}
 				// Check for date length
 				if ((strlen($page["title"]) + strlen($date)) > 30) {
-					$displayDate = "<\h3>\n\t\t\t\t\t\t\t<h3><span class='post-date'>{$date}</span>";
+					$displayDate = "</h3>\n\t\t\t\t\t\t\t<h3 style='margin-top: 0;'><span class='post-date'>{$date}</span>";
 				} else {
 					$displayDate = "<span class='post-date'>{$date}</span>";
 				}
