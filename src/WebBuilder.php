@@ -142,6 +142,5 @@
 
 // Runs the code when php is called from the command line
 $commitMessage = $argv[1];
-var_dump($argv);
 buildWebsite($commitMessage);
 ?>

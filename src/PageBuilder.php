@@ -32,7 +32,16 @@
 			if ($page["type"] != "none") {
 				$pageContent .= "\t\t\t<div class='new-post'>\n\t\t\t\t".buildSectionSeparator('home');
 				$pageContent .= "\t\t\t\t<table id='post-table'>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td class='image-container'><img src='./img/home-images/".$page["display_image"]."' alt='".$page["title_short"]."' /></td>\n";
-				$pageContent .= "\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<h3>".$page["title"]."</h3>\n";
+				// Format date
+				$date = "";
+				if ($page["start_date"] == $page["end_date"]) {
+					$date = $page["start_date"];
+				} else if (substr($page["start_date"], -4) == substr($page["end_date"], -4)) {
+					$date = substr($page["start_date"], 3) . " - " . $page["end_date"];
+				} else {
+					$date = $page["start_date"] . " - " . $page["end_date"];
+				}
+				$pageContent .= "\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<h3>".$page["title"]."<span class='post-date'>{$date}</span></h3>\n";
 				$pageContent .= "\t\t\t\t\t\t\t<p>".$page["display_description"]."</p>\n";
 				$pageContent .= "\t\t\t\t\t\t\t<p class='link'><a href='./".getPageFileName($page["title_short"])."'>Read More</a></p>\n";
 				$pageContent .= "\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</table>\n\t\t\t</div>\n";
@@ -64,8 +73,21 @@
 		$pageContent .= "\t</head>\n\t<body>\n";
 		$pageContent .= "\t\t<div class='background'></div>\n";
 		$pageContent .= "\t\t<div class='body-content'>\n";
-		// Add the header and heading page separator
-		$pageContent .= "\t\t\t<h1>{$page['title']}</h1>\n\t\t\t".buildSectionSeparator() . "\n";
+		// Add the header, date, and heading page separator
+		if ($page["title"] != "About Me") {
+			$date = "";
+			if ($page["start_date"] == $page["end_date"]) {
+				$date = $page["start_date"];
+			} else if (substr($page["start_date"], -4) == substr($page["end_date"], -4)) {
+				$date = substr($page["start_date"], 3) . " - " . $page["end_date"];
+			} else {
+				$date = $page["start_date"] . " - " . $page["end_date"];
+			}
+			$pageContent .= "\t\t\t<h1>{$page['title']}</h1>\n";
+			$pageContent .= "\t\t\t<h4>{$date}</h4>\n\t\t\t".buildSectionSeparator()."\n";
+		} else {
+			$pageContent .= "\t\t\t<h1>{$page['title']}</h1>\n\t\t\t".buildSectionSeparator()."\n";
+		}
 		// Add the page content - iterate over each item in content_html and treat as a new line to write to file
 		foreach ($page["content_html"] as $line) {
 			switch ($line) {
