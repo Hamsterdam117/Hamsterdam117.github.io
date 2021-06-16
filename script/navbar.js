@@ -48,10 +48,10 @@ function onClickMenu(src) {
 function mouseOnMenu(src) {
 	var path = new URL(src);
 
-	if (path.pathname == "/img/navbar-icon/icon-white.png") {
+	if (path.pathname.endsWith("/img/navbar-icon/icon-white.png")) {
 		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-blue.png";
 
-	} else if (path.pathname == "/img/navbar-icon/icon-cross-white.png") {
+	} else if (path.pathname.endsWith("/img/navbar-icon/icon-cross-white.png")) {
 		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-blue.png";
 	}
 }
@@ -59,10 +59,10 @@ function mouseOnMenu(src) {
 function mouseOffMenu(src) {
 	var path = new URL(src);
 
-	if (path.pathname == "/img/navbar-icon/icon-blue.png") {
+	if (path.pathname.endsWith("/img/navbar-icon/icon-blue.png")) {
 		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
 
-	} else if (path.pathname == "/img/navbar-icon/icon-cross-blue.png") {
+	} else if (path.pathname.endsWith("/img/navbar-icon/icon-cross-blue.png")) {
 		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-white.png";
 	}
 }
@@ -82,7 +82,7 @@ window.onclick = function(event) {
       	openDropdown.classList.remove('show');
       	// Reset menu icon
       	var path = new URL(document.getElementById("nav-icon").src);
-		  	if (path.pathname == "/img/navbar-icon/icon-cross-white.png") {
+		  	if (path.pathname.endsWith("/img/navbar-icon/icon-cross-white.png")) {
 					document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
 				}
       }
