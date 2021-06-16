@@ -32,16 +32,16 @@ function onClickMenu(src) {
 
   // check that the pathname ends with each image
 	if (path.pathname.endsWith("/navbar-icon/icon-blue.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-blue.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-cross-blue.png";
 
 	} else if (path.pathname.endsWith("/navbar-icon/icon-cross-blue.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-blue.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-blue.png";
 
 	} else if (path.pathname.endsWith("/navbar-icon/icon-white.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-white.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-cross-white.png";
 
 	} else if (path.pathname.endsWith("/navbar-icon/icon-cross-white.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-white.png";
 	}
 }
 
@@ -49,10 +49,10 @@ function mouseOnMenu(src) {
 	var path = new URL(src);
 
 	if (path.pathname.endsWith("/img/navbar-icon/icon-white.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-blue.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-blue.png";
 
 	} else if (path.pathname.endsWith("/img/navbar-icon/icon-cross-white.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-blue.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-cross-blue.png";
 	}
 }
 
@@ -60,10 +60,10 @@ function mouseOffMenu(src) {
 	var path = new URL(src);
 
 	if (path.pathname.endsWith("/img/navbar-icon/icon-blue.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-white.png";
 
 	} else if (path.pathname.endsWith("/img/navbar-icon/icon-cross-blue.png")) {
-		document.getElementById("nav-icon").src = "/img/navbar-icon/icon-cross-white.png";
+		document.getElementById("nav-icon").src = "./img/navbar-icon/icon-cross-white.png";
 	}
 }
 
@@ -83,7 +83,7 @@ window.onclick = function(event) {
       	// Reset menu icon
       	var path = new URL(document.getElementById("nav-icon").src);
 		  	if (path.pathname.endsWith("/img/navbar-icon/icon-cross-white.png")) {
-					document.getElementById("nav-icon").src = "/img/navbar-icon/icon-white.png";
+					document.getElementById("nav-icon").src = "./img/navbar-icon/icon-white.png";
 				}
       }
     }
