@@ -37,7 +37,7 @@
 				if ($page["start_date"] == $page["end_date"]) {
 					$date = $page["start_date"];
 				} else if (substr($page["start_date"], -4) == substr($page["end_date"], -4)) {
-					$date = substr($page["start_date"], 3) . " - " . $page["end_date"];
+					$date = substr($page["start_date"], 0, 3) . " - " . $page["end_date"];
 				} else {
 					$date = $page["start_date"] . " - " . $page["end_date"];
 				}
@@ -79,7 +79,7 @@
 			if ($page["start_date"] == $page["end_date"]) {
 				$date = $page["start_date"];
 			} else if (substr($page["start_date"], -4) == substr($page["end_date"], -4)) {
-				$date = substr($page["start_date"], 3) . " - " . $page["end_date"];
+				$date = substr($page["start_date"], 0, 3) . " - " . $page["end_date"];
 			} else {
 				$date = $page["start_date"] . " - " . $page["end_date"];
 			}
