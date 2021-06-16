@@ -43,11 +43,11 @@
 				}
 				// Check for date length
 				if ((strlen($page["title"]) + strlen($date)) > 30) {
-					$displayDate = "</h3>\n\t\t\t\t\t\t\t<h3 style='margin-top: 0;'><span class='post-date'>{$date}</span>";
+					$titleAndDate = "<h3 style='margin-bottom:0;'>".$page["title"]."</h3>\n\t\t\t\t\t\t\t<h3 style='margin-top:0;'><span class='post-date'>{$date}</span></h3>";
 				} else {
-					$displayDate = "<span class='post-date'>{$date}</span>";
+					$titleAndDate = "<h3>".$page["title"]."<span class='post-date'>{$date}</span></h3>";
 				}
-				$pageContent .= "\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<h3>".$page["title"].$displayDate."</h3>\n";
+				$pageContent .= "\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t".$titleAndDate."\n";
 				$pageContent .= "\t\t\t\t\t\t\t<p>".$page["display_description"]."</p>\n";
 				$pageContent .= "\t\t\t\t\t\t\t<p class='link'><a href='./".getPageFileName($page["title_short"])."'>Read More</a></p>\n";
 				$pageContent .= "\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</table>\n\t\t\t</div>\n";
