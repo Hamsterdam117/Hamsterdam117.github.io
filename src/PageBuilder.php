@@ -41,7 +41,13 @@
 				} else {
 					$date = $page["start_date"] . " - " . $page["end_date"];
 				}
-				$pageContent .= "\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<h3>".$page["title"]."<span class='post-date'>{$date}</span></h3>\n";
+				// Check for date length
+				if ((strlen($page["title"]) + strlen($date)) > 30) {
+					$displayDate = "\n<span class='post-date'>{$date}</span>";
+				} else {
+					$displayDate = "<span class='post-date'>{$date}</span>";
+				}
+				$pageContent .= "\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<h3>".$page["title"].$displayDate."</h3>\n";
 				$pageContent .= "\t\t\t\t\t\t\t<p>".$page["display_description"]."</p>\n";
 				$pageContent .= "\t\t\t\t\t\t\t<p class='link'><a href='./".getPageFileName($page["title_short"])."'>Read More</a></p>\n";
 				$pageContent .= "\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</table>\n\t\t\t</div>\n";
