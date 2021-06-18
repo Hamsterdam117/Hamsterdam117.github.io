@@ -6,7 +6,7 @@
 			"type":"Education Projects",
 			"start_date":"Sep 2018",
 			"end_date":"Dec 2018",
-			"display_image":"Turbo-Racing.PNG",
+			"display_image":"Turbo-Racing.png",
 			"display_description":"For my A level Computer Science coursework, I made a racing game in Unity on my Windows-bootcamped MacBook. It had multiple vehicles to select and a rally mode. At some point I want to remake this game now I have more computing power than a Macbook but I want to make all of my own assets, I might wait until after university but I'm not sure yet.",
 			"content_html": [
 							"<p class='project-intro'>I made this game for my A level coursework. I originally designed the game to be like a mix of the Forza Horizon games, Forza Motorsport games and Dirt Rally games, with rally courses, race tracks and an open world to explore. Yes, this was pretty ambitious for the A level project, but it went pretty well considering the time I had for it. For the development, I split the work to do into different sections, so I could focus on individual elements seperately which made it easier for me to develop and visualise what I had to do.</p>",

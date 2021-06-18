@@ -1,0 +1,16 @@
+{
+	"pages":[
+		{
+			"title":"Arcanoid",
+			"title_short":"Arcanoid",
+			"type":"Education Projects",
+			"start_date":"Mar 2021",
+			"end_date":"May 2021",
+			"display_image":"Arcanoid.png",
+			"display_description":"This assignment for my game design module in my second year of university has been the most enjoyable so far. It was a very open assignment, so as long as I had a basic implementation of the old arcade game Arcanoid, I'd pass, but I added a few extra features for fun, and it was fun to improve my game development practices from the last game I made with Unity, Turbo Racing for my A level coursework.",
+			"content_html": [
+							""
+							]
+		}
+	]
+}

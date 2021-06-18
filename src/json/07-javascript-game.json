@@ -1,0 +1,16 @@
+{
+	"pages":[
+		{
+			"title":"JavaScript Game",
+			"title_short":"JavaScript Game",
+			"type":"Education Projects",
+			"start_date":"May 2021",
+			"end_date":"May 2021",
+			"display_image":"Javascript-Game.png",
+			"display_description":"One of my assignments for my Scripting Languages module in my second year of university required me to make sort of a create-your-own dungeon hunter game in JavaScript. It wasn't particularly difficult, but I thought it was fun and interesting and I learnt how to do some basic GIF editing with this project.",
+			"content_html": [
+							""
+							]
+		}
+	]
+}

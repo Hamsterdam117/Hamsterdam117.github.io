@@ -6,7 +6,7 @@
 			"type":"Personal Projects",
 			"start_date":"Jan 2018",
 			"end_date":"May 2018",
-			"display_image":"EES-Robot.JPG",
+			"display_image":"EES-Robot.jpg",
 			"display_description":"During College, I coded and helped build a self navigating robot for the Engineering Education Scheme (EES), using an Arduino for the processing unit and a ultrasound censor for collision detection. The body was made using two sheets of acrylic and a Lego frame to support the motors and track frames.",
 			"content_html": [
 							"<p class='project-intro'>This page is about the robot my team and I built and programmed for the Engineering Education Scheme that I applied to take part in while doing my first year of Sixth Form College in 2017-18. The task we were given from QinetiQ was to design and build a concept robot that would navigate through dangerous building or terrain that people couldn't do safely that could be used to deliver payloads or for search and rescue and things like that. This page will only be going through the fun bits of the project,  I won't be writing about any of the boring report sections we had to write, like the success criteria or evaluation bits, it'll just be the fun stuff, don't worry.</p>",

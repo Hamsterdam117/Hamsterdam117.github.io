@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Route Planner Web App</title>
+		<link rel='stylesheet' href='css/style.css'>
+		<div class='navbar-container'>
+			<div id='navbar'>
+				<a id='nav-home' href='./home.html'>Home</a>
+				<div style='float:left' id='dropdowneducation-projects' class='dropdown-position'>
+					<p id='nav-education-projects' onclick='onClickType(this.src, "education-projects")'>Education Projects</p>
+					<div id='dropdownContenteducation-projects' class='dropdown-content dropdown-content-type'>
+						<a id='nav-page' href='./turbo-racing.html'>Turbo Racing</a>
+						<a id='nav-page' href='./route-planner-web-app.html'>Route Planner Web App</a>
+						<a id='nav-page' href='./arcanoid.html'>Arcanoid</a>
+						<a id='nav-page' href='./javascript-game.html'>JavaScript Game</a>
+					</div>
+				</div>
+				<div style='float:left' id='dropdownpersonal-projects' class='dropdown-position'>
+					<p id='nav-personal-projects' onclick='onClickType(this.src, "personal-projects")'>Personal Projects</p>
+					<div id='dropdownContentpersonal-projects' class='dropdown-content dropdown-content-type'>
+						<a id='nav-page' href='./ees-robot.html'>EES Robot</a>
+						<a id='nav-page' href='./modding-mkwii.html'>Modding MKWii</a>
+					</div>
+				</div>
+				<div style='float:right' id='dropdown' class='dropdown-position'>
+					<img src='./img/navbar-icon/icon-white.png' onclick='onClickMenu(this.src)' onmouseover='mouseOnMenu(this.src)' onmouseout='mouseOffMenu(this.src)' id='nav-icon' />
+					<div id='menuDropdownContent' class='dropdown-content'>
+						<a id='nav-contact' href='mailto:jon@the-allens.net'>Email</a>
+						<a href='https://www.linkedin.com/in/jon-allen-b071ba195'>LinkedIn</a>
+						<a href='https://github.com/Hamsterdam117'>GitHub</a>
+					</div>
+				</div>
+				<a id='nav-about' style='float:right' href='./about-me.html'>About Me</a>
+			</div>
+		</div>
+		<script src='./script/navbar.js'></script>
+	</head>
+	<body>
+		<div class='background'></div>
+		<div class='body-content'>
+			<h1>Route Planner Web App</h1>
+			<h4>Feb - May 2021</h4>
+			<div id='h1-underline'><div class='line'></div><div class='circle'></div></div>
+
+			
+		</div>
+	</body>
+</html>

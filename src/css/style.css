@@ -205,6 +205,10 @@ table
   outline: none;
 }
 
+#nav-page {
+  text-align: left !important;
+}
+
 /* Dropdown Button */
 #dropdown img {
   height: 1.2em; 
@@ -230,7 +234,7 @@ table
   display: none;
   position: absolute;
   min-width: 10vw;
-  max-width: 15vw;
+  max-width: 18vw;
   border-radius: 1em;
   box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(0,0,0,0.2);
   background-image: url("/img/background.jpg");
@@ -255,6 +259,7 @@ table
   font-size: 1.5vw;
   display: block;
   margin: 0;
+  text-align: left;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -339,7 +344,7 @@ table
 #post-table img {
   max-width: 75%;
   height: auto;
-  border-radius: 5em;
+  border-radius: 2em;
   border: 0.15em solid #66a3ff;
 }
 
