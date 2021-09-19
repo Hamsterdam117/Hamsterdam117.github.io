@@ -44,6 +44,7 @@
 							"\t\t<td style='align-content: center;'><ul>",
 							"\t\t\t<li>Unit Testing with PHPUnit and JUnit</li>",
 							"\t\t\t<li>Unity Game Engine</li>",
+							"\t\t\t<li>Unreal Engine 4</li>",
 							"\t\t\t<li>Arduino Microcontroller Programming</li>",
 							"\t\t\t<li>Rainmeter Desktop Customisation</li>",
 							"\t\t\t<li>GIMP Image Editing</li>",
@@ -113,7 +114,7 @@
 							"\t\t\t\t<li>COMP122 - Object Oriented Programming</li>",
 							"\t\t\t\t<li>COMP124 - Computer Systems</li>",
 							"\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>",
-							"\t<div class='timeline-date'><p>2019 - 2020</p></div>",
+							"\t<div class='timeline-date'><p>2020 - 2021</p></div>",
 							"\t<div class='timeline-entry'>",
 							"\t\t<div class='timeline-content'>",
 							"\t\t\t<p class='timeline-title'>University of Liverpool - Year 2</p>",
@@ -128,7 +129,12 @@
 							"\t\t\t\t<li>COMP222 - Principles of Game Design</li>",
 							"\t\t\t\t<li>COMP228 - App Development</li>",
 							"\t\t\t\t<li>COMP284 - Scripting Languages</li>",
-							"\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>"
+							"\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>",
+							"\t<div class='timeline-date'><p>2021</p></div>",
+							"\t<div class='timeline-entry'>",
+							"\t\t<div class='timeline-content'>",
+							"\t\t\t<p class='timeline-title'>Lucid Games - Year in Industry</p>",
+							"\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>"
 							]
 		}
 	]

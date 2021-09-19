@@ -2,7 +2,7 @@
 	include "PageBuilder.php";
 
 	// Builds the website
-	function buildWebsite($commitMessage, $pathToBuild='../') {
+	function buildWebsite($commitMessage="", $pathToBuild='../') {
 		// Get directory ready for new build
 		if (!setupBuildDirectory($pathToBuild)) {
 			echo "FAILED: Missing CSS, JS, image, font, index.html file(s).";
@@ -29,7 +29,7 @@
 		}
 		echo "Completed Build.\n";
 
-		if (($commitMessage != null) || ($commitMessage != "")) {
+		if ($commitMessage != "") {
 			uploadToGitHub($commitMessage, $pathToBuild);
 		} else {
 			echo "No commit message provided: will not upload to GitHub.\n";
@@ -145,6 +145,9 @@
 	}
 
 // Runs the code when php is called from the command line
-$commitMessage = $argv[1];
-buildWebsite($commitMessage);
+if ($argv[1]) {
+	buildWebsite($argv[1]);
+} else {
+	buildWebsite();
+}
 ?>
