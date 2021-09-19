@@ -13,7 +13,7 @@
 							"buildSectionSeparator()",
 							"<h2>Building the Robot</h2>",
 							"<table id='centered-table' style='width: 90%'>",
-							"\t<tr>\n\t\t<td style='width: 30'><img src='./img/EES-Robot/lego-concept.JPG' alt='Lego Concept' style='width: 70%' /></td>",
+							"\t<tr>\n\t\t<td style='width: 30'><img src='./img/EES-Robot/lego-concept.jpg' alt='Lego Concept' style='width: 70%' /></td>",
 							"\t\t<td style='width: 70'><p>At the start, we got given a huge box of Lego technic and mindstorms stuff, so before we decided on or bought any of the parts we needed for our final robot, we made a lego concept. We also didnt have the right kind of tracks we wanted, which is why had multiple gears going down the track legs to give it some ground clearance.</p></td>\n\t</tr>",
 							"\t<tr>\n\t\t<td style='width: 70'><p>As the gearing system of the concept was just bad and gave the motors too much friction and pressure to work properly, we redesigned the track frame to use two motors per side and the plastic, clip-together Lego treads. We also used a lot of Lego technic parts to join the tread frames together and provide support as a whole chassis.</p></td>",
 							"\t\t<td style='width: 30'><img src='./img/EES-Robot/track-frame.jpg' alt='Track Frame' style='width: 70%' /></td>\n\t</tr>",
