@@ -26,7 +26,7 @@
 		// Add the header and heading page separator
 		$pageContent .= "\t\t\t<h1>Jon Allen</h1>\n\t\t\t".buildSectionSeparator();
 		// Add the home page intro
-		$pageContent .= "\t\t\t<p class='intro'>This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about. This website was originally made using the Jekyll framework and then rewritten using a custom PHP website builder that I wrote. If you're interested about how I have written the website, check it out on GitHub <a href='https://github.com/Hamsterdam117/Hamsterdam117.github.io'>here</a>.</p>\n";
+		$pageContent .= "\t\t\t<p class='intro'>This is a website for me to write about various projects, mostly personal and other things that I find interesting and want to write about. This website was originally made using the Jekyll framework and then rewritten using a custom PHP website builder that I wrote. If you're interested about how I have written the website, check it out on GitHub <a href='https://github.com/Hamsterdam117/Hamsterdam117.github.io' id='inline-link'>here</a>.</p>\n";
 		// Add the home page content (page display sections)
 		foreach ($pages as $page) {
 			if ($page["type"] != "none") {

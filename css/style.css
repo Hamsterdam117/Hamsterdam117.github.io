@@ -144,8 +144,17 @@ table
   display: inline-block;
 }
 
+#inline-link {
+  color: #66a3ff;
+  text-decoration: underline;
+  text-decoration-color: #66a3ff;
+}
 
-
+#inline-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
 
 
 
