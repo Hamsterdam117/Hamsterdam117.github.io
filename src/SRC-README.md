@@ -16,9 +16,11 @@ To add a new page:
 - if there is no commit message for github, the website will not upload
 - changes may take a few minutes to appear on the site
 - Any changes to "style.css" will require a CTRL+F5 of the browser to see the changes
+- Any images should have the extentions in lower case
 
 The "testLayout.html" file within src is an empty page that can be used to write the page and
 see how it looks as you go without needing to rebuild.
 
-Page building fucntions that can be used directly from the json file as a line:
+Page building functions that can be used directly from the json file as a line:
 - "buildSectionSeparator()"
+
