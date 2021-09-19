@@ -54,7 +54,7 @@
 			}
 		}
 		// Close the body tag, create the footer, and close html tag
-		$pageContent .= "\t\t</div>\n\t</body>\n".buildFooter()."</html>";
+		$pageContent .= "\t\t</div>\n\t".buildSectionSeparator()."\t</body>\n".buildFooter()."</html>";
 
 		//Write to file
 		$pageFile = fopen("{$path}/home.html", "w");

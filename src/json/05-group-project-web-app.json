@@ -31,7 +31,8 @@
 							"\t\t<td style='width: 40%'><img src='./img/Route-Planner/map-page-2.png' alt='Map Page with a Generated Route' style='width: 100%; border-radius: 5%;' /></td>\n\t\t\t\t</tr>\n\t\t\t</table>",
 							"<table id='centered-table' style='width: 90%'>\n\t\t\t\t<tr>",
 							"\t\t<td style='width: 40%'><img src='./img/Route-Planner/map-page-3.png' alt='Map Page with Locations to Select' style='width: 100%; border-radius: 5%;' /></td>",
-							"\t\t<td style='width: 60%'><p>If the user wants to pick their own route, they can select the locations in the table on the right, and once the button has been pressed, the locations will appear on the map and the route will be drawn between them.</p></td>\n\t\t\t\t</tr>\n\t\t\t</table>"
+							"\t\t<td style='width: 60%'><p>If the user wants to pick their own route, they can select the locations in the table on the right, and once the button has been pressed, the locations will appear on the map and the route will be drawn between them.</p></td>\n\t\t\t\t</tr>\n\t\t\t</table>",
+							"buildSectionSeparator()"
 							]
 		}
 	]

@@ -19,7 +19,8 @@ To add a new page:
 - Any images should have the extentions in lower case
 
 The "testLayout.html" file within src is an empty page that can be used to write the page and
-see how it looks as you go without needing to rebuild.
+see how it looks as you go without needing to rebuild, however, building is quick enough that
+I usually build without uploading to GitHub to test how the page looks.
 
 Page building functions that can be used directly from the json file as a line:
 - "buildSectionSeparator()"

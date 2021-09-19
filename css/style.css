@@ -416,6 +416,7 @@ table
 .timeline {
   position: relative;
   margin: 0 auto;
+  padding-bottom: 2.5vw;
 }
 
 /* The line of the timeline */

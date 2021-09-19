@@ -49,7 +49,8 @@
 							"\t<tr>\n\t\t\t\t\t<td style='width: 30'><img src='./img/Modding-MKW/dolphin-account.png' alt='dolphin-emulator' style='width: 100%; border-radius: 5%;' /></td>",
 							"\t\t<td style='width: 70'><p>Being able to play online using Wiimmfi isn't just applying the ISO patcher to enable Wiimmfi. I also need to aquire my Will Nand.bin backup, which also allows me to transfer my game data from my Wii to my computer. This is done with another Homebrew application, BootMii, which allows me to download a Wii backup to a USB drive in the back of the Wii, which includes the Nand.bin I need to get my profile data on pc.</p></td>\n\t\t\t\t</tr>",
 							"</table>",
-							"<p class='project-intro'>This is how far ive got with Mario Kart Wii modding so far, however I did try using Mario Kart 8 models and textures to make an almost 'HD' version of the game, but unfortunately the models weren't scaling properly to the bones and I couldn't get it to work properly. I might come back to that concept and/or other modding later (I would like to add my own tracks using LE-Code), but for now I'm leaving the modding here.</p>"
+							"<p class='project-intro'>This is how far ive got with Mario Kart Wii modding so far, however I did try using Mario Kart 8 models and textures to make an almost 'HD' version of the game, but unfortunately the models weren't scaling properly to the bones and I couldn't get it to work properly. I might come back to that concept and/or other modding later (I would like to add my own tracks using LE-Code), but for now I'm leaving the modding here.</p>",
+							"buildSectionSeparator()"
 							]
 		}
 	]

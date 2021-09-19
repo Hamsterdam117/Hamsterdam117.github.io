@@ -53,7 +53,8 @@
 							"\t\t<td style='width: 60%'><p>The rally course was made using a Unity terrain model of a mountain island found on the internet, where I then painted on the course using Unity's terrain editor. The checkpoints work in a similar way as the race, however, there are no laps, it is instead a point-to-point race.</p></td>\n\t\t\t\t</tr>\n\t\t\t</table>",
 							"<p class='project-intro' style='margin-bottom: 3vw;'>The best lap time or overall time would be saved at the end if it beats the previous record and then shown on the main menu.</p>",
 							"buildSectionSeparator()",
-							"<p class='project-intro' style='margin-top: 3vw;'>Overall, this was a very fun A level project and I think I did pretty well on it overall. I'd quite like to revisit something similar to this game in the future, as I know I can do a lot better with it now I know more about game development, and I would quite like to do all the sounds, 3D modelling and texturing myself next time to develop those skills further. If I end up doing that sort of project later, it'll definitely end up on this site.</p>"
+							"<p class='project-intro' style='margin-top: 3vw;'>Overall, this was a very fun A level project and I think I did pretty well on it overall. I'd quite like to revisit something similar to this game in the future, as I know I can do a lot better with it now I know more about game development, and I would quite like to do all the sounds, 3D modelling and texturing myself next time to develop those skills further. If I end up doing that sort of project later, it'll definitely end up on this site.</p>",
+							"buildSectionSeparator()"
 							]
 		}
 	]
