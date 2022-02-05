@@ -73,6 +73,9 @@
 		$pageContent .= "\t\t<title>{$page['title']}</title>\n";
 		// Link the stylesheets
 		$pageContent .= "\t\t<link rel='stylesheet' href='css/style.css'>\n";
+		if ($page["title"] == "JavaScript Game") {
+			$pageContent .= "\t\t<link rel='stylesheet' href='css/JSGame.css'>\n";
+		}
 		// add the navbar
 		$pageContent .= buildNavbar($pageTypesAndTitles);
 		// Close the head tag, create the body tag

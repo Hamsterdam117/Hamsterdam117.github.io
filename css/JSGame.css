@@ -1,0 +1,85 @@
+@font-face { font-family: Enchanted-Land; src: url('../fonts/Enchanted-Land.otf'); } 
+
+.gameBody {
+  background-image: url("../img/JSGame/wall.jpg");
+  background-repeat: repeat;
+  color: #dedede;
+  font-family: Enchanted-Land;
+  font-size: 2vw;
+  font-stretch: 500%;
+  letter-spacing: 2px;
+  width: 75%;
+  border-radius: 2em;
+  border: 0.15em solid #66a3ff;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin: 2em auto 2em auto;
+}
+
+
+/* Table styling */
+.gameBody #centered-table {
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+.gameTable {
+	margin: 0 auto;
+  width: 24vw;
+  height: 24vw;
+  background: url(../img/JSGame/board.png) no-repeat center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  table-layout: fixed;
+}
+
+.gameTable td {
+  width: 10%;
+  height: 10%;
+	margin: 0;
+	align-content: center;
+	vertical-align: middle;
+}
+
+.gameTable td:focus-visible {
+	outline: none;
+}
+
+.gameTable img {
+  display: block;
+  margin: auto;
+  border: 0 !important;
+  height: fit-content !important;
+}
+
+#gameStatus {
+  font-size: 2vw;
+}
+#m1 {
+  font-size: 2vw;
+}
+
+#gameButton {
+  font-family: Enchanted-Land;
+  font-size: 2vw;
+  width: 5em;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.39);
+  background-color: #dedede;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #003d76; 
+}
+
+#gameButton:hover {
+  background-color: #003d76;
+  border-color: #dedede;
+  border-radius: 10px;
+  color: #dedede;
+}
+
+.object-img {
+	
+}

@@ -157,10 +157,6 @@ table
 }
 
 
-
-
-
-
 /**********/
 /* NAVBAR */
 /**********/
@@ -277,12 +273,6 @@ table
 }
 
 
-
-
-
-
-
-
 /***********************/
 /* HOME PAGE AND POSTS */
 /***********************/
@@ -381,25 +371,6 @@ table
   background-color: #66a3ff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************/
 /* ABOUT PAGE */
 /**************/
@@ -480,11 +451,6 @@ table
 }
 
 
-
-
-
-
-
 /*****************/
 /* PROJECT PAGES */
 /*****************/
@@ -496,4 +462,49 @@ table
   margin-right: auto;
   text-align: center;
   margin-bottom: 4em; 
+}
+
+
+/*****************/
+/* SPLIT CONTENT */
+/*****************/
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  /*position: fixed;*/
+  z-index: 1;
+  top: 20%;
+  overflow-x: visible;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  width: 60%;
+  text-align: center;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 40%;
+  text-align: left;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: relative;
+  top: 30%;
+}
+.left .centered {
+  left: 60%;
+  transform: translate(-60%, -50%);
+}
+
+.right .centered {
+  top: 20%;
+  left: 30%;
+  transform: translate(-30%, -50%);
 }
