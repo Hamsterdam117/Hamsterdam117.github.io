@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Horde Shooter Game</title>
+		<link rel='stylesheet' href='css/style.css'>
+		<div class='navbar-container'>
+			<div id='navbar'>
+				<a id='nav-home' href='./home.html'>Home</a>
+				<div style='float:left' id='dropdowneducation-projects' class='dropdown-position'>
+					<p id='nav-education-projects' onclick='onClickType(this.src, "education-projects")'>Education Projects</p>
+					<div id='dropdownContenteducation-projects' class='dropdown-content dropdown-content-type'>
+						<a id='nav-page' href='./turbo-racing.html'>Turbo Racing</a>
+						<a id='nav-page' href='./route-planner.html'>Route Planner</a>
+						<a id='nav-page' href='./arcanoid.html'>Arcanoid</a>
+						<a id='nav-page' href='./javascript-game.html'>JavaScript Game</a>
+						<a id='nav-page' href='./horde-shooter-game.html'>Horde Shooter Game</a>
+						<a id='nav-page' href='./kinematic-vehicle-plugin.html'>Kinematic Vehicle Plugin</a>
+					</div>
+				</div>
+				<div style='float:left' id='dropdownpersonal-projects' class='dropdown-position'>
+					<p id='nav-personal-projects' onclick='onClickType(this.src, "personal-projects")'>Personal Projects</p>
+					<div id='dropdownContentpersonal-projects' class='dropdown-content dropdown-content-type'>
+						<a id='nav-page' href='./ees-robot.html'>EES Robot</a>
+						<a id='nav-page' href='./modding-mkwii.html'>Modding MKWii</a>
+						<a id='nav-page' href='./guitartabtool.html'>GuitarTabTool</a>
+					</div>
+				</div>
+				<div style='float:right' id='dropdown' class='dropdown-position'>
+					<img src='./img/navbar-icon/icon-white.png' onclick='onClickMenu(this.src)' onmouseover='mouseOnMenu(this.src)' onmouseout='mouseOffMenu(this.src)' id='nav-icon' />
+					<div id='menuDropdownContent' class='dropdown-content'>
+						<a id='nav-contact' href='mailto:jon@the-allens.net'>Email</a>
+						<a href='https://www.linkedin.com/in/jon-allen-b071ba195'>LinkedIn</a>
+						<a href='https://github.com/Hamsterdam117'>GitHub</a>
+					</div>
+				</div>
+				<a id='nav-about' style='float:right' href='./about-me.html'>About Me</a>
+			</div>
+		</div>
+		<script src='./script/navbar.js'></script>
+	</head>
+	<body>
+		<div class='background'></div>
+		<div class='body-content'>
+			<h1>Horde Shooter Game</h1>
+			<h4>Feb - April 2023</h4>
+			<div id='h1-underline'><div class='line'></div><div class='circle'></div></div>
+
+			<p class='project-intro'>For my continuous assignment for my Game Development module of my third year at uni I decided to make a top-down perspective horde survival shooter game, sort of similar to the dead-ops arcade mode of Call of Duty: Black Ops. This game involves multiple weapons of many different types, a weapon pickup system, a top-down third person character animation system, a health and stamina system, a wave system that increases in difficulty, a procedural enemy spawning system, and simple enemy AI, among other smaller developments.</p>
+			<div id='h1-underline'><div class='line'></div><div class='circle'></div></div>
+
+		</div>
+	</body>
+</html>

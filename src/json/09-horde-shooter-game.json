@@ -1,0 +1,17 @@
+{
+	"pages":[
+		{
+			"title":"Horde Shooter Game",
+			"title_short":"Horde Shooter Game",
+			"type":"Education Projects",
+			"start_date":"Feb 2023",
+			"end_date":"April 2023",
+			"display_image":"Horde-Shooter-Game.png",
+			"display_description":"For my continuous assignment for my Game Development module of my third year at uni I decided to make a top-down perspective horde survival shooter game, sort of similar to the dead-ops arcade mode of Call of Duty: Black Ops.",
+			"content_html": [
+							"<p class='project-intro'>For my continuous assignment for my Game Development module of my third year at uni I decided to make a top-down perspective horde survival shooter game, sort of similar to the dead-ops arcade mode of Call of Duty: Black Ops. This game involves multiple weapons of many different types, a weapon pickup system, a top-down third person character animation system, a health and stamina system, a wave system that increases in difficulty, a procedural enemy spawning system, and simple enemy AI, among other smaller developments.</p>",
+							"buildSectionSeparator()"
+							]
+		}
+	]
+}

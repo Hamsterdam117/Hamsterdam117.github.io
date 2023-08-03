@@ -1,0 +1,17 @@
+{
+	"pages":[
+		{
+			"title":"UE5 Kinematic Vehicle Plugin",
+			"title_short":"Kinematic Vehicle Plugin",
+			"type":"Education Projects",
+			"start_date":"Oct 2022",
+			"end_date":"May 2023",
+			"display_image":"Kinematic-Vehicle-Plugin.png",
+			"display_description":"For my final year dissertation at uni, I decided to write a plugin for Unreal Engine 5 that adds a modular and easy-to-use vehicle simulation using kinematics to rival the physically simulated Chaos vehicle plugin. This was quite the ambitious project, but I am very proud of the result, especially the animation system that I may return to in the future to continue development of.",
+			"content_html": [
+							"<p class='project-intro'>For my final year dissertation at uni, I decided to write a plugin for Unreal Engine 5 that adds a modular and easy-to-use vehicle simulation using kinematics to rival the physically simulated Chaos vehicle plugin. This was quite the ambitious project, but I am very proud of the result, especially the animation system that I may return to in the future to continue development of.</p>",
+							"buildSectionSeparator()"
+							]
+		}
+	]
+}
