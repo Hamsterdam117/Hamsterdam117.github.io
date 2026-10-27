@@ -6,6 +6,7 @@
 			"type":"Personal Projects",
 			"start_date":"Nov 2021",
 			"end_date":"Feb 2022",
+			"display_priority":7,
 			"display_image":"GuitarTabTool.png",
 			"display_description":"I started getting back into playing guitar during 2021, and wanted to make tab sheets of songs I learnt from YouTube in a way that wasnt unnecessarily difficult or costing me money, so I just made my own tool in UE5 (yes I know a game engine isn't the usual way to make this sort of thing but I'm good at C++ now and didn't want to re-learn JavaScript so here we are).",
 			"content_html": [

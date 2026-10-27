@@ -6,6 +6,7 @@
 			"type":"Education Projects",
 			"start_date":"Feb 2023",
 			"end_date":"April 2023",
+			"display_priority":8,
 			"display_image":"Horde-Shooter-Game.png",
 			"display_description":"For my continuous assignment for my Game Development module of my third year at uni I decided to make a top-down perspective horde survival shooter game, sort of similar to the dead-ops arcade mode of Call of Duty: Black Ops.",
 			"content_html": [

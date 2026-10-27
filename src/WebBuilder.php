@@ -51,6 +51,10 @@
 		        $pageArray = array_merge($pageArray, $data);
 		    }
 		}
+		// sort the array by display priority - newer pages get a higher priority to display first
+		usort($pageArray, function ($a, $b) {
+    		return ($b['display_priority'] ?? 0) <=> ($a['display_priority'] ?? 0);
+		});
 		return $pageArray;
 	}
 

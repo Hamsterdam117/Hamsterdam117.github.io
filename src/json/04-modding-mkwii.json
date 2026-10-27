@@ -6,6 +6,7 @@
 			"type":"Personal Projects",
 			"start_date":"Aug 2020",
 			"end_date":"Oct 2020",
+			"display_priority":3,
 			"display_image":"Modded-MKWii.png",
 			"display_description":"Little unusual I know, but I've had a lot of fun messing around with the Wii filesystem and modding the first game I became good at, and is still a really good game today despite the dated graphics, but thats nothing a pc emulator can't fix, which I also set up.",
 			"content_html": [

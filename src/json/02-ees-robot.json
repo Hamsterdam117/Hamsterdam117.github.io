@@ -6,6 +6,7 @@
 			"type":"Personal Projects",
 			"start_date":"Jan 2018",
 			"end_date":"May 2018",
+			"display_priority":1,
 			"display_image":"EES-Robot.jpg",
 			"display_description":"During College, I coded and helped build a self navigating robot for the Engineering Education Scheme (EES), using an Arduino for the processing unit and a ultrasound censor for collision detection. The body was made using two sheets of acrylic and a Lego frame to support the motors and track frames.",
 			"content_html": [

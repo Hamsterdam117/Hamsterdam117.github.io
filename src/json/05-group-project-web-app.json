@@ -6,6 +6,7 @@
 			"type":"Education Projects",
 			"start_date":"Feb 2021",
 			"end_date":"May 2021",
+			"display_priority":4,
 			"display_image":"Route-Planner.png",
 			"display_description":"For the group project module I took in my second year of university, we made a website application for planning a road trip and recommending locations of interest along the route picked. I programmed the main recommendation algorithm and wrote PHPUnit tests for it and the location sorting algorithm.",
 			"content_html": [
